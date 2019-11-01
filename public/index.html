@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Lab 4</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div id="app">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <a class="navbar-brand" href="index.html">
+      <i class="fa fa-super"></i>
+      &nbsp;&nbsp;&nbsp;Super Search
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      </div>
+    </nav>
+
+    <div class="padme">
+      <h1>Search For a Super by Name</h1>
+      <form v-on:submit.prevent="superREST">
+        <input type="text" v-model="supername">
+        <input type="submit" value="Search Supers!">
+      </form>
+      <br>
+      <ul>
+        <li v-for="item in supers">
+          {{ item.type }}.
+          <br> {{ item.defenition }}
+        </li>
+      </ul>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+      <div color="white">Created by Spring &nbsp; &nbsp;&nbsp;
+        <i class="fa fa-github" style="color:white; height: 20px;"></i>
+        <a href="https://github.com/BYUCS260/lab-4-node-springsc123">
+      Check out my Github</a></div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+  <script src="javascripts/script.js"></script>
+</body>
+
+</html>

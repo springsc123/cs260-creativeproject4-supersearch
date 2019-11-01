@@ -1,0 +1,69 @@
+body {
+  font-family: 'Arvo';
+  font-size: 16px;
+  background: #eccfcf;
+}
+
+.padme {
+  padding: 20px 100px 0px 100px;
+}
+
+/* List */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #E8E8E8 !important;
+  width: 500px;
+  min-height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+ul li:hover, ul li a:focus {
+ color:red;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #ff726f!important;
+    color: white !important;
+    text-align: center !important;
+}
+
+.yellow {
+    color: yellow !important;
+}
+
+.white {
+    color: white !important;
+}
+
+/* Nav Bar Styles */
+.navbar-custom {
+    background-color: #ff726f !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 25px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
