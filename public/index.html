@@ -41,10 +41,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="super in supers">
-            <td><p>{{ super.name }}</p><p><img :src="super.image" alt="No Image Available"></p></td>
-            <td><ul><li> {{ super.appearance }}</li></ul></td>
-            <td><p>{{ super.biography }}</p></td>
+          <tr v-for="person in supers">
+            <td><p>{{ person.name }}</p><p><img :src="person.image" alt="No Image Available"></p></td>
+            <td><ul><li> {{ person.appearance }}</li></ul></td>
+            <td><p>{{ person.biography }}</p></td>
           </tr>
         </tbody>
       </table>
