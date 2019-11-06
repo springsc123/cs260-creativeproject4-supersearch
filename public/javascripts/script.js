@@ -22,16 +22,35 @@ var app = new Vue({
         .then((response) => {
           console.log("super search by name returned: ");
           console.log(response);
+          
+          alises = []
+          // Get aliases
+          for(var j = 0; j < response.results[i].biography.aliases.length; j++){
+                alises.push(response.results[i].biography.aliases[i])
+              }
+          
 
           for (let i = 0; i < response.results.length; i++) {
             var person = {
               name: response.results[i].name,
               img: response.results[i].image.url,
-              appearance: response.results[i].appearance,
-              biography: response.results[i].biography
+              
+              //Appearance Information
+              aliases: alises,
+              
+              //Stats
+              combat: response.results[i].powerstats.combat,
+              intelligence: response.results[i].powerstats.intelligence,              
+              power: response.results[i].powerstats.power,              
+              speed: response.results[i].powerstats.speed,
+              
+              //Biography Information
+              fullName: response.results[i].biography.full-name,
+              alterEgos: response.results[i].biography.alter-egos,
+              publisher: response.results[i].biography.publisher,
             };
+            this.supers.push(person);
           }
-          this.supers.push(person);
         });
     },
   },
