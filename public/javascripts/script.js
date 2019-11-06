@@ -23,10 +23,6 @@ var app = new Vue({
           console.log("super search by name returned: ");
           console.log(response);
 
-
-
-
-
           for (let i = 0; i < response.results.length; i++) {
             console.log("IMAGE URL: " + response.results[i].image.url);
             alises = []
