@@ -28,7 +28,7 @@ var app = new Vue({
 
 
           for (let i = 0; i < response.results.length; i++) {
-            
+            console.log("IMAGE URL: " + response.results[i].image.url);
             alises = []
             // Get aliases
             for (var j = 0; j < response.results[i].biography.aliases.length; j++) {
