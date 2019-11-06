@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Lab 4</title>
+  <title>Super Search</title>
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,7 +44,8 @@
           <tr v-for="person in supers">
             <td><p>{{ person.name }}</p><p><img :src="person.image" alt="No Image Available"></p></td>
             <td><ul><li> {{ person.appearance }}</li></ul></td>
-            <td><p>{{ person.biography }}</p></td>
+            <td>{{ person.biography }}</td>
+            <td>{{ person.stats }}</td>
           </tr>
         </tbody>
       </table>

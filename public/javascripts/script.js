@@ -1,11 +1,14 @@
+/*global Vue*/
 var app = new Vue({
   el: '#app',
   data: {
+    columns: [],
     supers: [],
     supername: '',
   },
   methods: {
     async superREST() {
+      this.columns = ['','FACTS','BIO', 'STATS'];
       this.supers = [];
       console.log("SUPER: ");
       var url = "/searchsuper?q=" + this.supername;
