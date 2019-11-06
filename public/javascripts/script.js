@@ -59,7 +59,7 @@ var app = new Vue({
               let ali = ["Sorry, there are no supers with that key word", "Spring", "Tess"]
               var person = {
                 name: "Tess & Spring",
-                img: "./images/us.png",
+                img: "../images/us.jpg",
 
                 //Appearance Information
                 aliases: ali,
