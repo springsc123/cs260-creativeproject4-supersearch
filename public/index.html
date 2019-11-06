@@ -34,8 +34,8 @@
       </form>
       <br>
 
-      <table id="my_table">
-        <thead id="Super Results">
+      <table id="my_table" border=1 frame=void rules=rows>
+        <thead id="Super_Results">
           <tr>
             <th v-for="column in columns"> {{ column }}</th>
           </tr>
@@ -50,9 +50,10 @@
             </td>
             
             <td>
-              <ul v-for="alias in person.aliases">
-                <li> {{ alias }}</li>
-                </ul>
+              <p>{{ person.name }}</p>
+              <div v-for="alias in person.aliases">
+                <p>{{ alias }}</p>
+              </div>
             </td>
             
             <td>
@@ -67,7 +68,6 @@
               <p>Power: {{ person.power }}</p>
               <p>Speed: {{ person.speed }}</p>
             </td>
-             <v-divider></v-divider>
           </tr>
         </tbody>
       </table>
