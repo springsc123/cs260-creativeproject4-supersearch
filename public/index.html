@@ -33,20 +33,27 @@
         <input type="submit" value="Search Supers!">
       </form>
       <br>
-      <ul>
-        <li v-for="item in supers">
-          {{ item.type }}.
-          <br> {{ item.defenition }}
-        </li>
-      </ul>
-
+      <table id="my_table">
+        <thead id="Super Results">
+          <tr>
+            <th v-for="column in columns"> {{ column }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="super in supers">
+            <td><p>{{ super.name }}</p><p><img :src="super.img" alt="No Image Available"></p></td>
+            <td><ul><li> {{ super.appearance }}</li></ul></td>
+            <td><p>{{ super.biography }}</p></td>
+          </tr>
+        </tbody>
+      </table>
     <br>
     <br>
     <br>
     <br>
     <br>
     <div class="footer">
-      <div color="white">Created by Spring &nbsp; &nbsp;&nbsp;
+      <div color="white">Created by Spring & Tess &nbsp; &nbsp;&nbsp;
         <i class="fa fa-github" style="color:white; height: 20px;"></i>
         <a href="https://github.com/BYUCS260/lab-4-node-springsc123">
       Check out my Github</a></div>
