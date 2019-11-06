@@ -42,10 +42,30 @@
         </thead>
         <tbody>
           <tr v-for="person in supers">
-            <td><p>{{ person.name }}</p><p><img :src="person.image" alt="No Image Available"></p></td>
-            <td><ul><li> {{ person.appearance }}</li></ul></td>
-            <td>{{ person.biography }}</td>
-            <td>{{ person.stats }}</td>
+            
+            <td>
+              <p>{{ person.name }}</p>
+              <p><img :src="person.image" alt="No Image Available"></p>
+            </td>
+            
+            <td>
+              <ul v-for="alias in person.aliases">
+                <li> {{ alias }}</li>
+                </ul>
+            </td>
+            
+            <td>
+              <p>Full name: {{ person.fullName }}</p>
+              <p>Alter Egos: {{ person.alterEgos }}</p>
+              <p>publisher: {{ person.publisher }}</p>
+            </td>
+            
+            <td>
+              <p>Combat: {{ person.combat }}</p>
+              <p>Intelligence: {{ person.intelligence }}</p>
+              <p>Power: {{ person.power }}</p>
+              <p>Speed: {{ person.speed }}</p>
+            </td>
           </tr>
         </tbody>
       </table>
