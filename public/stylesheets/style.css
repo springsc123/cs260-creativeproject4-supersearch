@@ -9,20 +9,20 @@ body {
 }
 
 /* List */
-ul {
-  list-style: none;
-}
+/*ul {*/
+/*  list-style: none;*/
+/*}*/
 
-li {
-  background: #E8E8E8 !important;
-  width: 500px;
-  min-height: 40px;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-}
+/*li {*/
+/*  background: #E8E8E8 !important;*/
+/*  width: 500px;*/
+/*  min-height: 40px;*/
+/*  padding: 10px;*/
+/*  margin-bottom: 10px;*/
+/*  font-size: 1em;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
 
 ul li:hover, ul li a:focus {
  color:red;
